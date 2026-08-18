@@ -79,7 +79,38 @@
 </ul>
 </section>
 
-<section id="contact">
+<section id="contact" class="card">
+<h2>สั่งซื้อล่วงหน้า & สอบถามข้อมูล</h2>
+<form action="#" method="post" class="contact-form">
+<fieldset>
+<legend>ข้อมูลการสั่งซื้อและติดต่อ</legend>
+<div class="form-group">
+<label for="fullname">ชื่อ-นามสกุล:</label>
+<input type="text" id="fullname" name="fullname" required minlength="3" placeholder="ระบุชื่อและนามสกุล">
+</div>
+<div class="form-group">
+<label for="email">อีเมล:</label>
+<input type="email" id="email" name="email" required placeholder="example@email.com">
+</div>
+<div class="form-group">
+<label for="telephone">เบอร์โทรศัพท์ (10 หลัก):</label>
+<input type="tel" id="telephone" name="telephone" required pattern="[0-9]{10}" placeholder="0812345678">
+</div>
+<div class="form-group">
+<label for="quantity">จำนวนแก้ว:</label>
+<input type="number" id="quantity" name="quantity" min="1" max="50" value="1" required>
+</div>
+<div class="form-group">
+<label for="order-date">วันที่ต้องการรับสินค้า:</label>
+<input type="date" id="order-date" name="order_date" required>
+</div>
+<div class="form-group checkbox-group">
+<input type="checkbox" id="newsletter" name="newsletter" value="yes">
+<label for="newsletter">ยินยอมรับโปรโมชันและส่วนลดพิเศษประจำสัปดาห์</label>
+</div>
+<button type="submit" class="submit-btn">ส่งข้อมูลการสั่งซื้อ</button>
+</fieldset>
+</form>
 </section>
 </main>
 <footer>
